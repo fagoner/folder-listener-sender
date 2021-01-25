@@ -1,0 +1,20 @@
+{
+    "name": "folder-listener",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest --watchAll"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "chokidar": "^3.5.1",
+        "pdf-parse": "^1.1.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.20",
+        "jest": "^26.6.3"
+    }
+}
