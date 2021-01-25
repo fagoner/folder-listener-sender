@@ -65,13 +65,6 @@ it("Should clean the name", () => {
 //Split values
 
 it("Spliting values from Mynube", () => {
-  const firstInput =
-    "1Bien1.00 Uni700.000700.00IVA: 75.00DOCETAXEL KEMEX 80 MG";
-  const secondInput =
-    "2Bien1.00 Uni300.000300.00IVA: 32.14DOCETAXEL KEMEX 20 MG";
-  const thirdInput =
-    "1Bien206.00 Uni178.50036,771.00IVA: 3,939.75OXALIPLATINO 100 MG";
-  const delimiter = "<--space-anchor-->";
 
   const inputValues = [
     {
@@ -102,5 +95,4 @@ it("Spliting values from Mynube", () => {
     expect(actualValue).toStrictEqual(input.expected);
   });
 
-  expect(expected).toBeTruthy;
 });
