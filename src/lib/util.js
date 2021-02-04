@@ -15,6 +15,16 @@ exports.cleanFileName = (input) => {
     return cleanValue;
 };
 
+exports.getInvoiceNumber = (input) => {
+    const cleanValue = input
+        .toLowerCase()
+        .replace(/(fel)/g, "")
+        .replace(/(fel|factura)/g, "")
+        .replace(/(\.)(pdf)/g, "")
+        .trim();
+    return cleanValue;
+};
+
 exports.splitContent = (input) => {
     let remainder = input.replace(
         config.filter.sectionBien,
